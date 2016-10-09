@@ -1,0 +1,21 @@
+﻿<windows:PrismUnityApplication x:Class="Sunshine.UWP.App"
+                               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                               xmlns:local="using:Sunshine.UWP"
+                               xmlns:windows="using:Prism.Unity.Windows"
+                               RequestedTheme="Light">
+    <windows:PrismUnityApplication.Resources>
+        <SolidColorBrush x:Key="ColorWhite">#FFFFFF</SolidColorBrush>
+        <SolidColorBrush x:Key="ColorGrey">#cccccc</SolidColorBrush>
+        <SolidColorBrush x:Key="ColorGrey700">#646464</SolidColorBrush>
+        <SolidColorBrush x:Key="ColorBlack">#000000</SolidColorBrush>
+
+        <SolidColorBrush x:Key="ColorSunshineLightBlue">#ff64c2f4</SolidColorBrush>
+        <SolidColorBrush x:Key="ColorSunshineBlue">#ff1ca8f4</SolidColorBrush>
+        <SolidColorBrush x:Key="ColorSunshineDarkBlue">#0288D1</SolidColorBrush>
+        <Style x:Key="TemperaturaMaiorTitulo" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="35" />
+            <Setter Property="Foreground" Value="{StaticResource ColorWhite}" />
+        </Style>
+    </windows:PrismUnityApplication.Resources>
+</windows:PrismUnityApplication>
