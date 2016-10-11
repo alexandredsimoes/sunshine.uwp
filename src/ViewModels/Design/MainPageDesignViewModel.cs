@@ -20,17 +20,31 @@ namespace Sunshine.UWP.ViewModels.Design
                 },
                 new Previsao()
                 {
-                    Data = DateTime.Now,
+                    Data = DateTime.Now.AddDays(1),
                     Maxima = 20,
                     Minima = 17,
                     Status = "neve"
                 },
                 new Previsao()
                 {
-                    Data = DateTime.Now,
+                    Data = DateTime.Now.AddDays(2),
                     Maxima = 10,
                     Minima = 7,
                     Status = "nuvem"
+                },
+                new Previsao()
+                {
+                    Data = DateTime.Now.AddDays(3),
+                    Maxima = 10,
+                    Minima = 7,
+                    Status = "chuva"
+                },
+                new Previsao()
+                {
+                    Data = DateTime.Now.AddDays(4),
+                    Maxima = 10,
+                    Minima = 7,
+                    Status = "nevoa"
                 }
             };
         }
