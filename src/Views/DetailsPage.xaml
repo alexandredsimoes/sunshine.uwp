@@ -1,0 +1,67 @@
+﻿<Page x:Class="Sunshine.UWP.Views.DetailsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:Sunshine.UWP.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Command="{Binding Compartilhar}" Label="compartilhar" />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.TopAppBar>
+    <Grid Margin="15, 40, 15, 15" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Margin="15">
+                <TextBlock Text="Hoje" />
+                <TextBlock Text="10 de outubro" />
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0"
+                           Grid.Column="0"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Style="{StaticResource HeaderTextBlockStyle}"
+                           Text="28" />
+                <TextBlock Grid.Row="1"
+                           Grid.Column="0"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           Style="{StaticResource SubheaderTextBlockStyle}"
+                           Text="19" />
+
+                <Image Grid.Row="0"
+                       Grid.Column="1"
+                       Source="ms-appx:///Assets/Icones/art_clear.png"
+                       Stretch="Fill" />
+                <TextBlock Grid.Row="1"
+                           Grid.Column="1"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           Text="Chuva" />
+
+            </Grid>
+            <StackPanel Grid.Row="2" Margin="15">
+                <TextBlock Text="Humidade" />
+                <TextBlock Text="Pressão" />
+                <TextBlock Text="Velocidade do vento" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
