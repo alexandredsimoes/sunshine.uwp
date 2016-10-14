@@ -9,5 +9,10 @@ namespace Sunshine.UWP.Models
         public double Maxima { get; set; }
         public double Minima { get; set; }
         public string Status { get; set; }
+        public string Descricao { get; set; }
+        public double Pressao { get; set; }
+        public double VelocidadeVento { get; set; }
+        public int Humidade { get; set; }
+        public int PosicaoVento { get; set; }
     }
 }
