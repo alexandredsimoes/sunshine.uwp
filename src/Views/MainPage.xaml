@@ -23,6 +23,7 @@
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="Margin" Value="5" />
                 </Style>
             </ListView.ItemContainerStyle>
             <ListView.HeaderTemplate>
@@ -71,7 +72,7 @@
                                Grid.Column="1"
                                Width="100"
                                Height="100"
-                               Source="{Binding Previsoes[0].Status,
+                               Source="{Binding Previsoes[0].Descricao,
                                                 Converter={StaticResource IconeStatusConverter},
                                                 ConverterParameter='art_'}"
                                Stretch="Fill" />
@@ -80,7 +81,7 @@
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
                                    Foreground="{StaticResource ColorWhite}"
-                                   Text="{Binding Previsoes[0].Status}" />
+                                   Text="{Binding Previsoes[0].Descricao}" />
                     </Grid>
                 </DataTemplate>
             </ListView.HeaderTemplate>
@@ -95,13 +96,13 @@
                         <Image Grid.Column="0"
                                Width="32"
                                Height="32"
-                               Source="{Binding Status,
+                               Source="{Binding Descricao,
                                                 Converter={StaticResource IconeStatusConverter},
                                                 ConverterParameter='ic_'}"
                                Stretch="Fill" />
                         <StackPanel Grid.Column="1">
                             <TextBlock Text="{Binding Data, Converter={StaticResource DataExtensoConverter}}" />
-                            <TextBlock Text="{Binding Status}" />
+                            <TextBlock Text="{Binding Descricao}" />
                         </StackPanel>
                         <StackPanel Grid.Column="2">
                             <TextBlock FontSize="15" FontWeight="Black">
